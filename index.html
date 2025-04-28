@@ -11,7 +11,12 @@
         let nombreproducto = "rodesias";
         const preciounitario = 300;
         const cantidaddeseada = prompt(`cuantas ${nombreproducto} que sale ${preciounitario}, vas a querer?`)
-        alert(`usted eligio ${cantidaddeseada} ${nombreproducto} el total es: ${preciounitario * cantidaddeseada}`)
+
+        const costototal = preciounitario * cantidaddeseada;
+        if(cantidaddeseada >= 5) {
+            costototal = preciounitario *  cantidaddeseada * 0.9     }
+        alert(`el total a pagar por ${cantidaddeseada} ${nombreproducto} es $${costototal}`);
+
 
 
 

@@ -7,25 +7,22 @@
 </head>
 <body>
     <script>
+        let producto = ["samsung galaxy s25 ulta","apple iphone 16 pro","samsung zflip 6","motorola moto g80"];
 
-        const usuario = "";
-        const contrasenia = "";
-        let intentos = 0;
-        const maxiintentos = 3;
-        let accesocontenido = false;
-
-        do{
-            const pedir_us = prompt("ingresa tu usuario:");
-            const pedir_contra = prompt ("ingresa tu contraseña:");
-
-            if( contrasenia == pedir_contra )
-
-
+        console.log("for normal")
+        for(let i=0; i<4 ;i++){
+            console.log(productos[i])
         }
+        console.log("el producto eliminado es: " + productoeliminado);
+
+        console.log("-".repeat(36))
         
-        
-        
-        
+        for( producto of productos){
+            console.log(producto)
+        }
+
+
     </script>
+    
 </body>
-</html> 
+</html>
